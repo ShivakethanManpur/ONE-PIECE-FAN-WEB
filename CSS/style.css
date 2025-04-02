@@ -1,0 +1,552 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+.header{
+    width:100%;
+    cursor: pointer;
+}
+.navbar{
+    background-color: #c8472c;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+.navbar-toggler i{
+   font-size: 30px;  
+}
+.navbar-brand h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.nav-item .nav-link{
+    color:white;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+
+
+/* SECTION-HOME */
+
+.Home{
+    min-height: 100vh;  
+    padding:180px 10% 200px;
+}
+ .Home .video-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
+}
+.Home{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+}
+.Home .Home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:8px;
+}
+.heading {
+    position: relative;
+}
+.heading img {
+    width: 70px;
+    height: auto;
+    display: block;
+    position: absolute;
+    margin-top:-28px;
+    margin-left:-32px;  
+}
+.Home-content h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #c8472c;
+    text-shadow: 0 0 8px whitesmoke;
+}
+.Home-content h3{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px ;
+    color: #412a1e;
+}
+.Home-content p{
+    font-size:18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.Home-content p b{
+    font-size:18px;
+    font-weight:bolder;
+}
+.btn{
+    margin-top: 70px;
+    display:inline-flex;
+    align-items: center;
+    gap:8px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #c8472c;
+    border-radius: 8px;
+    color:white;
+    box-shadow: 0 10px 20px black;
+    transition: all .5s ease;
+    position: relative;
+}
+.Home .btn i{
+    font-size: 18x;
+    animation: arrow-down ease 2s infinite;
+}
+.btn:hover{
+    background-color: white;
+    color: black;   
+}
+.logo-up{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+
+
+/* SECION-1 */
+
+.first-section{
+    background:linear-gradient(180deg,rgba(0, 0, 0, 0.5) 50%,rgba(0,0,0,0.7)80%),url(../IMAGES/wanted-background) center no-repeat;
+    background-size: cover; 
+    padding: 60px 10% 60px;  
+}
+.section-heading{
+    text-align: center;
+}
+.row .section-heading h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color:white;  
+}
+.row .section-heading h3{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    color: white;
+    background:linear-gradient(90deg, rgba(253, 239, 229, 0) 0%, #c8472c 55.77%, rgba(253, 239, 229, 0) 100%);
+    padding: 10px;
+    border-radius: 16px;
+    animation: bounce infinite 5s ease-in-out;  
+}
+.first-section .custom-col img{
+    padding: 5px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 5px 2px #7e7a7a; 
+    animation: bounce infinite 5s ease-in-out;
+    border-radius: 16px;
+}
+
+
+/* SECTION-2 */
+
+.second-section{
+  background: linear-gradient(90deg,#f8de3c 0%, #ff0000 30%, #58acf4 100%);
+  padding: 60px 10% 60px;
+}
+.second-section .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+}
+.admiral-heading{
+    position: relative;
+}
+.admiral-heading h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: black;
+    background: linear-gradient(90deg,rgba(253, 239, 229, 0) 0%,  #d3e1ec 50%, rgba(253, 239, 229, 0) 100%);
+    border-radius: 8px;
+    padding: 12px;
+    animation: bounce infinite 5s ease-in-out;
+}
+.admiral-heading p{
+    font-size:20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+}
+.admiral-member{
+    margin-top: 16px;
+}
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+.image-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.image-wrapper img{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 16px;
+}
+.image-wrapper img:hover{
+    scale: 1.1;
+}
+.member-content{
+    position: absolute;
+    background-color:white;
+    color:white;
+    left:50%;
+    bottom:-150px;
+    width:auto;
+    transform: translateX(-50%);
+    padding: 24px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.admiral-member:hover .member-content{
+    opacity: 1;
+    bottom: 50px;
+}
+.image-wrapper img{
+    width:350px;
+    height: auto;
+}
+.member-content h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.member-content .lighting-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:100%;
+    z-index: -1;
+}
+.member-content .magma-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.member-content .ice-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:100%;
+    z-index: -1;
+}
+.member-content h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+/* SECTION-3 */
+
+.third-section{
+    background: linear-gradient(180deg,black 0%,white 50%, black 100%);
+   padding: 30px 10% 30px;
+}
+.emperor-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+.emperor-heading h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap:50px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px; 
+    color: white;
+    border-radius: 8px;
+}
+.emperor-heading p{
+    font-size: 20px;
+    font-size: 600;
+    line-height: 24px;
+    margin-top: 16px;
+    color: white;
+}
+.pirate-logo {
+ width:100px;
+ height:auto;
+}
+.carousel-inner{
+    padding: 0px 80px;
+}
+.carousel-item img{
+    width:100%;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.carousel-indicators img{
+    width:100px;
+    display: block;
+    border-radius: 8px; 
+}
+.carousel-indicators button{
+    width: max-content!important;
+    margin-bottom: 20px;
+}
+.carousel-indicators {
+    position: unset;
+}
+.carousel-indicators button.active img{
+    border: 2px solid red;
+    cursor: pointer;
+}
+.carousel-caption h1{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.carousel-caption p b{
+    font-weight: bolder;
+}
+
+
+
+/* SECTION-4 */
+
+.fourth-section{
+    background:linear-gradient(360deg, skyblue 0%, white 50%, skyblue 100%);
+    padding: 40px 10% 40px;
+}
+.container-fluid .arc-heading h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: white;
+    background: linear-gradient(270deg, white 0%, skyblue 50%, white 100%);
+    border-radius: 8px;
+    padding: 10px;
+}
+.fourth-section .row{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    width:100%;
+    padding:0px 10px;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 5px 2px rgb(15, 15, 15,0.3);
+}
+.fourth-section .row .custom-col img{
+   border-radius: 16px;
+   margin-top: 10px;
+   padding: 5px;
+   animation: bounce infinite 5s ease-in-out;
+   box-shadow: 2px 5px 4px 2px rgb(211, 205, 205);
+}
+.card-text{
+    text-align: center;
+}
+.card-body h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+}
+.card-body p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.card a .card-bottom{
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #c8472c;
+    border-radius: 16px;
+    color:white;
+}
+
+
+/* FOOTER-SECTION */
+
+.footer-section{
+    background-color:#c8472c;
+    color: white;
+    padding: 60px 10% 60px;  
+}
+.container-fluid h1{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.container-fluid h2{
+    font-size: 20px;
+    font-weight: 500;
+    line-height:30px;
+    text-transform: uppercase;
+}
+.container-fluid h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.container-fluid .link{
+    color:black;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;   
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.social-icons a i{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+/* KEY FRAMES */
+
+/* Home */
+@keyframes arrow-down{
+    from{transform: translateY(0) ;}
+    to{transform: translateY(7px);}
+}
+
+ /* Section-2 */
+@keyframes bounce {
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(-5px);}
+    100%{transform: translateY(10px);} 
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px){
+
+    .carousel-inner{
+      padding: 0px 20px;
+    }
+    .carousel-caption h1{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:491px){
+
+    .emperor-heading h1{
+        gap:20px;
+    }
+    .pirate-logo {
+        width:50px;
+        height:auto;
+    }
+    .carousel-indicators img{
+        width:50px;
+        border-radius: 0;
+    }
+    .second-section .row{
+        grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    }
+    .image-wrapper img{
+        width:250px;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:375px){
+
+    .navbar-brand img{
+        width: 30px;
+        height: 30px;
+    }
+    .navbar-toggler i{
+       font-size: 24px;  
+    }
+    .navbar-brand h1{
+        font-size: 20px;
+    }
+    .Home-content h3{
+        font-size: 22px;
+    }
+    .Home-content p{
+        font-size: 16px;
+    }
+    .carousel-caption h1{
+        display: none;
+    }
+    .carousel-indicators img{
+        width:30px;
+    }
+}
