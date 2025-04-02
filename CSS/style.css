@@ -504,6 +504,7 @@ a{
 
 @media screen and (max-width:491px){
 
+
     .emperor-heading h1{
         gap:20px;
     }
@@ -546,6 +547,11 @@ a{
     .carousel-inner{
         padding: 0px 0px;
     }
+    .Home-content p{
+        height: 310px;
+        overflow: hidden;
+    }
+
 }
 
 
@@ -571,6 +577,6 @@ a{
         display: none;
     }
     .carousel-indicators img{
-        width:30px;
+        width:70px;
     }
 }
